@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center px-14 py-6 bg-[#FFCB04] max-md:justify-between'>
          <div className='max-md:mx-auto max-md:max-h-[100px]'>
-            <img src={logo} className='w-36'/>
+            <img src={logo} className='w-36 max-md:self-center'/>
          </div>
          <div>
             <ul className='flex items-center gap-10 pr-8'>
