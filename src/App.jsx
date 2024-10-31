@@ -9,8 +9,8 @@ const App = () => {
     <div className="font-sans">
       {/* <Home /> */}
       {/* <Login /> */}
-      {/* <Contact /> */}
-      <Plans />
+      <Contact />
+      {/* <Plans /> */}
     </div>
   )
 }

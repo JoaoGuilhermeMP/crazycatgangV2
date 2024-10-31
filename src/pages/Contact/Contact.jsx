@@ -8,26 +8,39 @@ const Contact = () => {
   return (
     <div className='bg-[#F5B42C] h-screen w-screen overflow-x-hidden'>
         <Header />
-        <div className='max-h-screen flex items-center justify-between mx-16 mt-4'>
+        <div className='max-h-screen flex items-center justify-between mx-16 mt-4 max-md:mt-28'>
             <div className=''>
                 <h1 className='text-6xl font-semibold'>Contate-nos</h1>
-                <h2 className='text-2xl'>Entre em contato conosco para relatar problemas e efetiar denúncias!</h2>
+                <h2 className='text-2xl'>Entre em contato conosco para relatar problemas e efetuar denúncias!</h2>
                 <form className='flex flex-col'>
-                    <label htmlFor="nome" className='pt-4'>Nome</label>
-                    <input type="text" placeholder='Seu Nome!' className='w-72 h-10 bg-inherit border rounded-md placeholder:text-white placeholder:px-2'/>
+                    <div className='inline pt-4 max-md:flex max-md:flex-col'>
+                        <label htmlFor="nome" className='pt-4'>Nome</label>
+                        <input type="text" placeholder='Seu Nome!' className='w-72 h-10 bg-inherit border rounded-md mx-2 placeholder:text-black placeholder:px-2 max-md:mx-0'/>
+                        <label htmlFor="sobrenome" className='pt-4 pl-4 max-md:pl-0'>Sobrenome</label>
+                        <input type="text" placeholder='Seu Sobrenome!' className='w-72 h-10 bg-inherit border rounded-md mx-2 placeholder:text-black placeholder:px-2 max-md:mx-0'/>
+                    </div>
 
-                    <label htmlFor="sobrenome" className='pt-4'>Sobrenome</label>
-                    <input type="text" placeholder='Seu Sobrenome!' className='w-72 h-10 bg-inherit border rounded-md placeholder:text-white placeholder:px-2'/>
+                    <label htmlFor="motivo" className='pt-4'>Motivo para contato</label>
+                    <select name="motivo" id="motivo" className='rounded-md  bg-inherit border first:text-white '>
+                        <option value="nenhum" >Nenhum</option>
+                        <option value="problemaPlanos">Problema com os Planos</option>
+                        <option value="larTemporario">Dúvidas sobre lar temporário</option>
+                        <option value="lojinha">Problema com a lojinha</option>
+                        <option value="adocao">Dúvidas sobre o processo de adoção</option>
+                        <option value="voluntario">Desejo ser voluntário</option>
+                        <option value="resgate">Dúvidas sobre o processo de resgate</option>
+                        <option value="outro">Outro</option>
+                    </select>
 
                     <label htmlFor="email" className='pt-4'>E-mail</label>
-                    <input type="email" name="email" id="email" placeholder='email@email.com' className='h-10 bg-inherit border rounded-md placeholder:text-white placeholder:px-2' />
+                    <input type="email" name="email" id="email" placeholder='email@email.com' className='h-10 bg-inherit border rounded-md placeholder:text-black placeholder:px-2' />
 
-                    <label htmlFor="Description" className='pt-4'>Motivo para contato</label>
-                    <textarea name="Description" id="description" placeholder='Digite aqui o motivo para o contato!' className='h-44 border rounded-md bg-inherit placeholder:px-2 placeholder:text-white'></textarea>
+                    <label htmlFor="Description" className='pt-4'>Observações</label>
+                    <textarea name="Description" id="description" placeholder='Conte-nos mais sobre o motivo de seu contato!' className='h-44 border rounded-md bg-inherit placeholder:px-2 placeholder:text-black'></textarea>
 
                     <button type="submit" className='border h-14 mt-6 text-white bg-black border-transparent rounded-md'>Enviar</button>
                 </form>
-                <img src={CasalGato} className='mx-auto mb-8'/>
+                <img src={CasalGato} className='mx-auto mb-8 max-md:mb-[70px]'/>
             </div>
             <div>
                 <img src={GatoNaLua} className='pr-32 max-md:hidden' />
