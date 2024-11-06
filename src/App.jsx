@@ -10,11 +10,6 @@ import { BrowserRouter } from "react-router-dom"
 const App = () => {
   return (
     <div className="font-sans">
-      {/* <Home />
-      {/* <Login /> */}
-      {/* <Contact /> */}
-      {/* <Plans /> */}
-      {/* <Shop /> */}
       <BrowserRouter>
         <Router />
       </BrowserRouter>

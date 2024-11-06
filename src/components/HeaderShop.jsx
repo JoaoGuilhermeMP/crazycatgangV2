@@ -1,6 +1,10 @@
 import React from 'react'
 import Logo from '../assets/indexLogo.png'
 import { NavLink } from 'react-router-dom'
+import { CiSearch } from "react-icons/ci";
+import { IoIosPerson } from "react-icons/io";
+import { CiHeart } from "react-icons/ci";
+import { IoCartOutline } from "react-icons/io5";
 
 const HeaderShop = () => {
   return (
@@ -12,22 +16,22 @@ const HeaderShop = () => {
             </div>
             <div className='pr-20 max-md:hidden'>
                 <ul className='flex items-center gap-10'>
-                    <li><NavLink to="/" className='text-xl'>Home</NavLink></li>
-                    <li><NavLink to="/shop" className='text-xl'>Lojinha</NavLink></li>
-                    <li><NavLink to="/plans" className='text-xl'>Planos</NavLink></li>
-                    <li><NavLink to="/contact" className='text-xl'>Contate-nos</NavLink></li>
+                    <li><NavLink to="/" className='text-xl hover:underline hover:scale-110 block max-md:hidden'>Home</NavLink></li>
+                    <li><NavLink to="/shop" className='text-xl hover:underline hover:scale-110 block max-md:hidden'>Lojinha</NavLink></li>
+                    <li><NavLink to="/plans" className='text-xl hover:underline hover:scale-110 block max-md:hidden'>Planos</NavLink></li>
+                    <li><NavLink to="/contact" className='text-xl hover:underline hover:scale-110 block max-md:hidden'>Contate-nos</NavLink></li>
                 </ul>
             </div>
             <div id='icons ' className='pr-20 max-md:hidden'>
                 <ul className='flex items-center gap-10'>
-                    <li><a href="#">a</a></li>
-                    <li><a href="#">b</a></li>
-                    <li><a href="#">c</a></li>
-                    <li><a href="#">d</a></li>
+                    <li className='text-3xl hover:scale-110'><a href="#"><IoIosPerson /></a></li>
+                    <li className='text-3xl hover:scale-110'><a href="#"><CiSearch /></a></li>
+                    <li className='text-3xl hover:scale-110'><a href="#"><CiHeart /></a></li>
+                    <li className='text-3xl hover:scale-110'><a href="#"><IoCartOutline /></a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </div> 
   )
 }
 
