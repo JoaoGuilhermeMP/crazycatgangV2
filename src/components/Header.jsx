@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/indexLogo.png'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -9,10 +10,11 @@ const Header = () => {
          </div>
          <div>
             <ul className='flex items-center gap-10 pr-8'>
-                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><a href="#">Home</a></li>
-                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><a href="#">Contate-Nos</a></li>
-                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><a href="#">Lojinha</a></li>
-                <li className='text-xl text-white border border-transparent w-32 h-12 flex items-center justify-center rounded-md bg-black hover:scale-110 max-sm:hidden'><a href="#">Inscreva-se</a></li>
+                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><NavLink to="/">Home</NavLink></li>
+                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><NavLink to="/contact">Contate-Nos</NavLink></li>
+                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><NavLink to="/plans">Planos</NavLink></li>
+                <li className='text-xl hover:underline hover:scale-110 block max-md:hidden'><NavLink to="/shop">Lojinha</NavLink></li>
+                <li className='text-xl text-white border border-transparent w-32 h-12 flex items-center justify-center rounded-md bg-black hover:scale-110 max-sm:hidden'><NavLink to="/signup">Inscreva-se</NavLink></li>
             </ul>
          </div>
     </header>

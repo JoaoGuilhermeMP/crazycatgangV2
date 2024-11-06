@@ -7,6 +7,7 @@ import { IoPeopleCircleOutline } from "react-icons/io5";
 import { IoLockClosedOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import Footer from './Footer';
+import { NavLink } from 'react-router-dom';
 
 const Main = () => {
   return (
@@ -15,7 +16,7 @@ const Main = () => {
             <div>
                 <h1 className='text-4xl mb-10 font-semibold'>Adote um pet e ganhe Carinho</h1>
                 <p className='text-2xl mb-6'>Adote um pet com responsabilidade e ganhe um “Kit Casa Nova” totalmente de graça!</p>
-                <a href="#" className=' text-white border border-transparent w-32 h-12 flex items-center justify-center rounded-md bg-black hover:scale-110 max-md:mx-auto max-md:mb-6'>Saiba Mais</a>
+                <NavLink to="/plans" className=' text-white border border-transparent w-32 h-12 flex items-center justify-center rounded-md bg-black hover:scale-110 max-md:mx-auto max-md:mb-6'>Saiba Mais</NavLink>
             </div>
             <div>
                 <img src={PurpleCats} className='rounded-md max-md:max-h-[350px] max-md:max-w-[350px]' />
@@ -43,7 +44,7 @@ const Main = () => {
                     <IoPeopleCircleOutline className='w-8 h-8 mb-2 max-md:mx-auto' />
                     <h2 className='text-2xl mb-2'>Voluntarie-se!</h2>
                     <p className='text-xl pb-3'>Seja um voluntario e ajude-nos a salvar vidas! Clique em saiba Mais para efetuar seu cadastro!</p>
-                    <a href="#" className=' text-white border border-transparent w-28 h-10 flex items-center justify-center rounded-md bg-black hover:scale-110 max-md:mx-auto'>Saiba Mais</a>
+                    <NavLink to="/contact" className=' text-white border border-transparent w-28 h-10 flex items-center justify-center rounded-md bg-black hover:scale-110 max-md:mx-auto'>Saiba Mais</NavLink>
                 </div>
                 <div className='px-14'>
                     <IoLockClosedOutline className='w-8 h-8 mb-2 max-md:mx-auto' />

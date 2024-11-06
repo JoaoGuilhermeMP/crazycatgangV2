@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/indexLogo.png'
+import { NavLink } from 'react-router-dom'
 
 const HeaderShop = () => {
   return (
@@ -11,10 +12,10 @@ const HeaderShop = () => {
             </div>
             <div className='pr-20 max-md:hidden'>
                 <ul className='flex items-center gap-10'>
-                    <li><a href="#" className='text-xl'>Home</a></li>
-                    <li><a href="#" className='text-xl'>Lojinha</a></li>
-                    <li><a href="#" className='text-xl'>Sobre</a></li>
-                    <li><a href="#" className='text-xl'>Contate-nos</a></li>
+                    <li><NavLink to="/" className='text-xl'>Home</NavLink></li>
+                    <li><NavLink to="/shop" className='text-xl'>Lojinha</NavLink></li>
+                    <li><NavLink to="/plans" className='text-xl'>Planos</NavLink></li>
+                    <li><NavLink to="/contact" className='text-xl'>Contate-nos</NavLink></li>
                 </ul>
             </div>
             <div id='icons ' className='pr-20 max-md:hidden'>
