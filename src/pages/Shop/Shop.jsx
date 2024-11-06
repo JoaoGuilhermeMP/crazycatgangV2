@@ -9,6 +9,7 @@ import Entrega from '../../assets/shopImages/entrega.svg'
 import Suporte from '../../assets/shopImages/suporte.svg'
 import Footer from '../../components/Footer';
 import Garantias from '../../components/Garantias';
+import { NavLink } from 'react-router-dom';
 
 
 const Shop = () => {
@@ -41,7 +42,9 @@ const Shop = () => {
               <img src={Alimentador} alt="" />
             </div>
             <div className='bg-white h-full pl-4 max-md:pt-3'>
-              <h1 className='text-2xl font-semibold pb-4'>Alimentador</h1>
+              <NavLink to="/items" >
+                <h1 className='text-2xl font-semibold pb-4 hover:underline'>Alimentador</h1>
+              </NavLink>
               <p className='text-gray-500 text-lg pb-4'>Moderno e automático</p>
               <span className='font-semibold text-2xl'>R$240.00</span>
             </div>

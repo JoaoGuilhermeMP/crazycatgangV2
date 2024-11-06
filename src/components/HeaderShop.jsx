@@ -27,7 +27,7 @@ const HeaderShop = () => {
                     <li className='text-3xl hover:scale-110'><a href="#"><IoIosPerson /></a></li>
                     <li className='text-3xl hover:scale-110'><a href="#"><CiSearch /></a></li>
                     <li className='text-3xl hover:scale-110'><a href="#"><CiHeart /></a></li>
-                    <li className='text-3xl hover:scale-110'><a href="#"><IoCartOutline /></a></li>
+                    <li className='text-3xl hover:scale-110'><NavLink to="/cart"><IoCartOutline /></NavLink></li>
                 </ul>
             </div>
         </div>
